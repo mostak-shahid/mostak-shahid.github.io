@@ -98,6 +98,7 @@ h6 {
 
 /* PHP Email Form Messages
 ------------------------------*/
+.contact-email-form .error-message,
 .php-email-form .error-message {
   display: none;
   background: #df1529;
@@ -108,6 +109,7 @@ h6 {
   font-weight: 600;
 }
 
+.contact-email-form .sent-message,
 .php-email-form .sent-message {
   display: none;
   color: #ffffff;
@@ -118,6 +120,7 @@ h6 {
   font-weight: 600;
 }
 
+.contact-email-form .loading,
 .php-email-form .loading {
   display: none;
   background: var(--surface-color);
@@ -126,6 +129,7 @@ h6 {
   margin-bottom: 24px;
 }
 
+.contact-email-form .loading:before,
 .php-email-form .loading:before {
   content: "";
   display: inline-block;
@@ -1331,6 +1335,7 @@ section,
   color: var(--contrast-color);
 }
 
+.contact .contact-email-form,
 .contact .php-email-form {
   background-color: var(--surface-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -1338,11 +1343,14 @@ section,
 }
 
 @media (max-width: 575px) {
+  .contact .contact-email-form,
   .contact .php-email-form {
     padding: 20px;
   }
 }
-
+.contact .contact-email-form input[type=text],
+.contact .contact-email-form input[type=email],
+.contact .contact-email-form textarea,
 .contact .php-email-form input[type=text],
 .contact .php-email-form input[type=email],
 .contact .php-email-form textarea {
@@ -1355,18 +1363,25 @@ section,
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
+.contact .contact-email-form input[type=text]:focus,
+.contact .contact-email-form input[type=email]:focus,
+.contact .contact-email-form textarea:focus,
 .contact .php-email-form input[type=text]:focus,
 .contact .php-email-form input[type=email]:focus,
 .contact .php-email-form textarea:focus {
   border-color: var(--accent-color);
 }
 
+.contact .contact-email-form input[type=text]::placeholder,
+.contact .contact-email-form input[type=email]::placeholder,
+.contact .contact-email-form textarea::placeholder,
 .contact .php-email-form input[type=text]::placeholder,
 .contact .php-email-form input[type=email]::placeholder,
 .contact .php-email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
+.contact .contact-email-form button[type=submit],
 .contact .php-email-form button[type=submit] {
   color: var(--contrast-color);
   background: var(--accent-color);
@@ -1376,6 +1391,7 @@ section,
   border-radius: 50px;
 }
 
+.contact .contact-email-form button[type=submit]:hover,
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
