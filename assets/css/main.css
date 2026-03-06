@@ -1013,6 +1013,9 @@ section,
 
 .portfolio .portfolio-item img {
   background-color: var(--bs-primary-bg-subtle);
+  width: 100%;
+  height: auto;
+  padding: 10px;
 }
 
 .portfolio .portfolio-item .portfolio-info {
